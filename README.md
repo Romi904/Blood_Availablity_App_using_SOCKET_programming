@@ -29,3 +29,5 @@ Choose the blood bank that you want to contact and make a call to them.
 License:
 
 This application is licensed under the MIT license. See LICENSE.txt for more details.
+## Illustration purpose only
+## Under DEVELOPMENT 👨‍💻👩‍💻
