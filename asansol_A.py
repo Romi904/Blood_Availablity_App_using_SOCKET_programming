@@ -17,15 +17,15 @@ AB = 2
 #         data=cli.recv(1024).decode()
 #         if data == 'A':
 #             print('Received Request Available Blood :',A,'Bottles of group ',data)
-#             x='Available '+A
+#             x='Available '+str(A)
 #             cli.send(x.encode('ascii'))
 #         elif data == 'B':
 #             print('Received Request Available Blood :',B,'Bottles of group ',data)
-#             x='Available '+A
+#             x='Available '+str(B)
 #             cli.send(x.encode('ascii'))
 #         elif data == 'AB':
 #             print('Received Request Available Blood :',AB,'Bottles of group ',data)
-#             x='Available '+A
+#             x='Available '+str(AB)
 #             cli.send(x.encode('ascii'))
 
 # while True:
@@ -42,11 +42,11 @@ while connect:
         break
     elif data == 'B':
         print('Received Request Available Blood :',B,'Bottles of group ',data)
-        x='Available '+A
+        x='Available '+str(B)
         cli.send(x.encode('ascii'))
         break
     elif data == 'AB':
         print('Received Request Available Blood :',AB,'Bottles of group ',data)
-        x='Available '+A
+        x='Available '+str(AB)
         cli.send(x.encode('ascii'))
         break

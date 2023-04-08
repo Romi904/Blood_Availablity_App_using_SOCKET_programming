@@ -3,14 +3,14 @@
 import socket
 import threading
 s=socket.socket()
-s.bind(('127.0.0.1',5026))
+s.bind(('127.0.0.1',5022))
 s.listen(3)
 print('Waiting for connection....')
 print('Waiting For DNS To Respond....')
 
-A = 12
-B = 20
-AB = 58
+A = 120 
+B = 60
+AB = 180
 connect = True
 while connect:
     cli,address = s.accept()
@@ -22,11 +22,11 @@ while connect:
         break
     elif data == 'B':
         print('Received Request Available Blood :',B,'Bottles of group ',data)
-        x='Available '+A
+        x='Available '+str(B)
         cli.send(x.encode('ascii'))
         break
     elif data == 'AB':
         print('Received Request Available Blood :',AB,'Bottles of group ',data)
-        x='Available '+A
+        x='Available '+str(AB)
         cli.send(x.encode('ascii'))
         break

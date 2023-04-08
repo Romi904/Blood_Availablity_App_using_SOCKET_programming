@@ -20,7 +20,7 @@ def newClientHandler(cli,ip):
 
         if opr == 'A' :
             c=socket.socket()
-            c.connect(('127.0.0.1',5021))
+            c.connect(('127.0.0.1',5021)) # Main Server for Blood A
             while True :
                 if data[1]=='kolkata':
                     x=data[0]
@@ -45,7 +45,7 @@ def newClientHandler(cli,ip):
 
         elif opr == 'B':
             a=socket.socket()
-            a.connect(('127.0.0.1',5022))
+            a.connect(('127.0.0.1',5022)) # Main Server for Blood B
             while True :
                 if data[1]=='kolkata':
                     x=data[0]
@@ -69,7 +69,7 @@ def newClientHandler(cli,ip):
                 break
         elif opr == 'AB':
             b=socket.socket()
-            b.connect(('127.0.0.1',5023))
+            b.connect(('127.0.0.1',5023)) # Main Server for Blood AB
             while True :
                 if data[1]=='kolkata':
                     x=data[0]

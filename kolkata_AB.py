@@ -22,11 +22,11 @@ while connect:
         break
     elif data == 'B':
         print('Received Request Available Blood :',B,'Bottles of group ',data)
-        x='Available '+A
+        x='Available '+str(B)
         cli.send(x.encode('ascii'))
         break
     elif data == 'AB':
         print('Received Request Available Blood :',AB,'Bottles of group ',data)
-        x='Available '+A
+        x='Available '+str(AB)
         cli.send(x.encode('ascii'))
         break
